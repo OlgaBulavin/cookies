@@ -369,3 +369,143 @@ margin-top: 110px;
     top: -920px;
     left: 0;
 }
+
+
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 320px;
+    max-height: 400px;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+
+    border-radius: 20px;
+    padding: 20px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+
+    backdrop-filter: blur(10px);
+
+    overflow-y: auto;
+    z-index: 1000;
+
+    transition: all 0.3s ease;
+}
+
+
+.cart-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.cart-item {
+    font-size: 14px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-total {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.cart-item-name {
+    flex: 1;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-controls button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-controls span {
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-price {
+    font-weight: 600;
+}
+
+.remove {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-controls button,
+.remove {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.cart-controls button:hover,
+.remove:hover {
+    background: #f2f2f2;
+}
+
+.remove {
+    color: #c0392b;
+    border-color: #e0b4b4;
+}
+
+.remove:hover {
+    background: #ffe5e5;
+}
+
+
+
+.cart.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 12px;
+    background: #5243F4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  
+  .checkout-button:hover {
+    background: #3c2ede;
+  }
